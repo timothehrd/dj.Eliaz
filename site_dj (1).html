@@ -1,87 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DJ Eliaz</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background: #111;
-    }
-    header h1 {
-      margin: 0;
-      color: #ff3366;
-      font-size: 2em;
-    }
-    main {
-      padding: 30px 20px;
-    }
-    .about {
-      max-width: 600px;
-      margin: 0 auto 40px;
-      color: #ccc;
-    }
-    .photos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .photo {
-      width: 100%;
-      height: 200px;
-      background: #222;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #555;
-      font-size: 0.9em;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #111;
-      color: #aaa;
-    }
-    footer a {
-      color: #ff3366;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>DJ Eliaz</h1>
-    <p>Jeune DJ autodidacte — Musique électro, house & techno</p>
+  <header class="hero">
+    <img src="images/dj-eliaz-hero.jpg" alt="DJ Eliaz en live" class="hero-img" />
+    <h1>DJ ELIAZ</h1>
   </header>
 
   <main>
     <section class="about">
-      <h2>À propos</h2>
-      <p>DJ Eliaz est un jeune DJ passionné par la musique électronique. Il partage son énergie derrière les platines avec des sons rythmés et des ambiances uniques. Disponible pour soirées, événements et festivals.</p>
+      <h2>À propos de DJ Eliaz</h2>
+      <p>DJ Eliaz est un jeune DJ passionné connu pour ses performances énergiques et ses sets variés mêlant électro, house et techno.</p>
+      <p>Suivez-le sur Instagram : 
+        <a href="https://www.instagram.com/dj.eliaz" target="_blank">@dj.eliaz</a>
+      </p>
     </section>
 
-    <section class="photos">
-      <div class="photo">Emplacement photo 1</div>
-      <div class="photo">Emplacement photo 2</div>
-      <div class="photo">Emplacement photo 3</div>
-      <div class="photo">Emplacement photo 4</div>
+    <section class="gallery">
+      <h2>Galerie</h2>
+      <div class="photos">
+        <img src="images/photo1.jpg" alt="DJ Eliaz en club" />
+        <img src="images/photo2.jpg" alt="DJ Eliaz face au public" />
+        <img src="images/photo3.jpg" alt="Platines de DJ Eliaz" />
+        <img src="images/photo4.jpg" alt="Foule en concert" />
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Suivez DJ Eliaz sur <a href="https://www.instagram.com/dj.eliaz" target="_blank">Instagram @dj.eliaz</a></p>
+    <p>© 2025 DJ Eliaz — Tous droits réservés</p>
   </footer>
 </body>
 </html>
+Et voici le style.css à mettre dans le même dossier :
+
+css
+Copier le code
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+/* --- Header --- */
+.hero {
+  position: relative;
+  color: white;
+}
+.hero-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* --- About --- */
+.about {
+  max-width: 600px;
+  margin: 40px auto;
+  color: #ccc;
+}
+.about a {
+  color: #ff3366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --- Gallery --- */
+.gallery {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.photos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* --- Footer --- */
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px;
+  font-size: 0.9em;
+}
