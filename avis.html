@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ.ELIAZ — Avis Clients</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+  <div class="logo">DJ.<span>ELIAZ</span></div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Présentation</a>
+    <a href="about.html">À propos</a>
+    <a href="avis.html" class="active">Avis</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
+
+<main class="page-content">
+  <h1>Vos avis</h1>
+  <p>Ton avis compte beaucoup ! Merci de partager ton expérience avec DJ.ELIAZ 🎧</p>
+
+  <form action="https://formspree.io/f/xzzkdall" method="POST" class="feedback-form">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="Nom" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="rating">Note</label>
+    <select id="rating" name="Note" required>
+      <option value="">-- Choisis une note --</option>
+      <option value="⭐">⭐</option>
+      <option value="⭐⭐">⭐⭐</option>
+      <option value="⭐⭐⭐">⭐⭐⭐</option>
+      <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+      <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <label for="message">Commentaire</label>
+    <textarea id="message" name="Commentaire" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Envoyer l’avis</button>
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

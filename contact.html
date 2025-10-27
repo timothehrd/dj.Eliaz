@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ.ELIAZ — Contact & Devis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+  <div class="logo">DJ.<span>ELIAZ</span></div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Présentation</a>
+    <a href="about.html">À propos</a>
+    <a href="avis.html">Avis</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</aside>
+
+<main class="page-content">
+  <h1>Contact & Devis</h1>
+  <p>Pour réserver DJ.ELIAZ ou demander un devis, remplis le formulaire ci-dessous 👇</p>
+
+  <section class="contact-info">
+    <p><strong>📞 Téléphone :</strong> <a href="tel:0626258983">06 26 25 89 83</a></p>
+    <p><strong>📧 Email :</strong> <a href="mailto:contact@dj-eliaz.fr">contact@dj-eliaz.fr</a></p>
+    <p><strong>📸 Instagram :</strong> <a href="https://instagram.com/dj.eliaz" target="_blank">@dj.eliaz</a></p>
+    <p><strong>👍 Facebook :</strong> <a href="https://facebook.com/dj.eliaz" target="_blank">@dj.eliaz</a></p>
+  </section>
+
+  <form action="https://formspree.io/f/mblpdank" method="POST" class="feedback-form">
+    <label>Nom</label>
+    <input type="text" name="Nom" required>
+    <label>Email</label>
+    <input type="email" name="Email" required>
+    <label>Type d’événement</label>
+    <select name="Type d'événement" required>
+      <option value="">-- Sélectionne --</option>
+      <option value="Anniversaire">Anniversaire</option>
+      <option value="Mariage">Mariage</option>
+      <option value="Soirée privée">Soirée privée</option>
+      <option value="Événement professionnel">Événement professionnel</option>
+      <option value="Autre">Autre</option>
+    </select>
+    <label>Date</label>
+    <input type="date" name="Date" required>
+    <label>Lieu</label>
+    <input type="text" name="Lieu" required>
+    <label>Nombre de personnes</label>
+    <input type="number" name="Nombre de personnes" min="1" required>
+    <label>Message</label>
+    <textarea name="Message" rows="5"></textarea>
+    <button type="submit" class="btn">Envoyer la demande</button>
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
