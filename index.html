@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recréation — Site</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <div class="brand-text"><h1>Mon Projet</h1><small>Tagline / Slogan</small></div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#hero">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <a href="#hero">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Une expérience web moderne et élégante</h2>
+          <p>Recréation visuelle et fonctionnelle du site demandé. Design responsive pour ordinateurs et mobiles, animations douces et code propre.</p>
+          <div class="cta">
+            <a class="btn" href="#gallery">Voir la galerie</a>
+            <a class="btn ghost" href="#contact">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="assets/hero.jpg" alt="Visuel" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h3>Services</h3>
+        <p class="lede">Ce que nous proposons</p>
+        <div class="cards">
+          <div class="card"><h4>Design</h4><p>UI/UX moderne, responsive.</p></div>
+          <div class="card"><h4>Développement</h4><p>HTML, CSS, JavaScript propres.</p></div>
+          <div class="card"><h4>Déploiement</h4><p>Hébergement sur Netlify / GitHub Pages.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h3>Galerie</h3>
+        <div class="gallery-grid">
+          <div class="g-card"><img src="assets/photo1.jpg" alt="photo1"></div>
+          <div class="g-card"><img src="assets/photo2.jpg" alt="photo2"></div>
+          <div class="g-card"><img src="assets/photo3.jpg" alt="photo3"></div>
+          <div class="g-card"><img src="assets/photo4.jpg" alt="photo4"></div>
+        </div>
+        <p class="hint">Remplacez les images dans /assets/ par vos photos.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <form id="contact-form" class="form">
+          <div class="row">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Votre message"></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Envoyer</button>
+            <p id="form-status" class="form-status" hidden>Merci — message stocké localement.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Recréation du site — Remplacez le contenu / images. Hébergement : GitHub + Netlify.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
